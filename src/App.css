@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: gray;
+    margin: 0;
+}
+
+.calculationWindow {
+    color: #fff;
+    text-align: right;
+    font-weight: lighter;
+}
+
+.calculationWindow > * {
+    min-height: 30px;
+}
+
+.buttonBlock {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.button {
+    background-color: lightgray;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border: .25vw solid darkgray;
+    font-weight: bold;
+}
+
+.button.accent {
+    background-color: darkorange;
+    color: #fff;
+}
+
+.span-2 {
+    grid-column: span 2;
+    aspect-ratio: unset;
+}
